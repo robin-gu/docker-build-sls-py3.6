@@ -7,3 +7,4 @@ RUN apt-get update -yq && \
     rm -rf /var/lib/apt/lists/*
 # RUN cat registry=https://registry.npm.taobao.org/ > ~/.npmrc
 RUN npm install -g serverless
+ENV SERVERLESS_PLATFORM_VENDOR tencent
