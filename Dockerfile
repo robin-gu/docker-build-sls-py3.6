@@ -11,4 +11,4 @@ ENV SERVERLESS_PLATFORM_VENDOR tencent
 RUN pip3 install --no-cache-dir coscmd tccli
 ADD https://coding-public-generic.pkg.coding.net/cci/release/cci-agent/linux/amd64/cci-agent .
 RUN chmod a+x ./cci-agent
-RUN cat registry=https://registry.npm.taobao.org/ > ~/.npmrc
+RUN echo registry=https://registry.npm.taobao.org/ > ~/.npmrc
